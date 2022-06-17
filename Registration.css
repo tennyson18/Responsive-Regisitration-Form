@@ -1,0 +1,135 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+body{
+    max-height: 1200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url(images/bg-intro-desktop.png);
+    background-color: #ff7978;
+}
+h1{
+    color: #fff;
+    margin-bottom: 10px;
+}
+p{
+    color: #fff;
+    font-size: 15px;
+}
+.bg-text{
+    margin-right: 40px;
+}
+.trial{
+    margin-left: 70px;
+}
+/* .container{
+    width: 600px;
+} */
+.text-wrapper{
+    position: relative;
+    margin-top: 40px;
+    max-width: 550px;
+    padding: 15px;
+    background: #5d54a3;
+    border-radius: 6px;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.8); 
+}
+.form-wrapper{
+    position: relative;
+    margin-bottom: 40px;
+    max-width: 550px;
+    padding: 40px;
+    border-radius: 6px;
+    background: #fff;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.8);
+}
+.form-wrapper{
+    margin-top: 30px;
+}
+.form-wrapper .input-box{
+    height: 40px;
+    margin: 18px 0;
+}
+.form-wrapper .input-box input{
+    height: 100%;
+    width: 100%;
+    outline:none;
+    padding: 0 15px;
+    font-size: 17px;
+    font-weight: 400;
+    color: #333; 
+    border: 1.5px solid #c9c6c6;
+    border-radius: 6px;
+    border-bottom-width: 1.5px;
+    transition: all 0.3s ease;
+}
+input:required:invalid{
+    outline: none;
+    border: none;
+    border: 1px solid hsl(0, 100%, 74%);
+    background-image: url(images/icon-error.svg);
+    background-repeat: no-repeat;
+    background-position: right;
+    background-origin: content-box;
+}
+input:invalid+span{
+    display: inline;
+    color: hsl(0, 100%, 74%);
+    float: right;
+    font-size: 14px;
+}
+input:invalid{
+    outline: none;
+    border:none;
+    border: 1px solid hsl(154, 59%, 51%);
+}
+span{
+    display: none;
+    font-size: 2px;
+    font-style: italic;
+}
+.input-box input:focus,
+.input-box input:valid{
+    border-color:#5d54a3 /* rgb(99, 91, 91)*/;
+}
+.policy{
+    padding: 10px;
+}
+.form-wrapper .policy{
+    display: flex;
+    align-items: center;
+}
+.form-wrapper h3{
+    color: #707070;
+    font-size: 12px;
+    font-weight: 400;
+}
+.input-box.button input{
+    color: #fff;
+    letter-spacing: 1px;
+    border: none;
+    background: #37cc8a;
+    border-radius: 4px;
+    cursor: pointer;
+}
+.input-box.button input:hover{
+    background: #7ff1be;
+}
+.form-wrapper .policy h3{
+    /* color:#333; */
+    width: 100%;
+    text-align: center;
+}
+.form-wrapper .policy h3 a{
+    color: red;
+    text-decoration: none;
+}
+@media(max-width:1200px) {
+    body{
+        width: ;
+    }
+}
